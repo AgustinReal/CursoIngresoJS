@@ -10,7 +10,7 @@ function mostrar()
     // En este paso le indicamos al usuario que indique el nombre y se guarda en la V (nombre).
 	nombre = prompt("Ingrese su nombre");
 
-    // Terminando, se retorna en el valor el nombre ingresado por el usuario.
+    // Terminando, esto se pasa de  la variable a la pagina.
 	document.getElementById("txtIdNombre").value = nombre;
 }
 

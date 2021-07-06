@@ -1,4 +1,6 @@
 /*
+Real Agustin DIV D.
+
 Debemos lograr tomar el importe por ID ,
 transformarlo a entero (parseInt), luego
 mostrar el importe con un aumento del 10 %
@@ -6,7 +8,11 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
 // En estas variables aclaramos que "El sueldo"= (Salario), "Los extras"= (Aumento 10%) y "El salarioFinal" = (Valor final).
-  let salario, extras, salarioFinal;
+  let salario;
+  
+  let extras;
+
+  let salarioFinal;
 
 
 salario = parseInt(document.getElementById("txtIdSueldo").value);

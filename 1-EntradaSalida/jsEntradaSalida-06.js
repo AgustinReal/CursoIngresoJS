@@ -1,10 +1,15 @@
 /*
+Real Agustin DIV D.
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
-	let numero1, numero2, suma;
+	let numero1;
+    
+    let numero2;
+
+    let suma;
 
     numero1= document.getElementById("txtIdNumeroUno").value;
 

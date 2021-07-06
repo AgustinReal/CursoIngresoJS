@@ -1,4 +1,5 @@
 /*
+Real Agustin DIV D.
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 
 mostrar el resulto por medio de "ALERT"
@@ -6,7 +7,11 @@ ej.: "la Resta es 750"*/
 
 function sumar()
 {	
- let num1 ,num2 ,suma;
+ let num1;
+
+ let num2;
+
+ let suma;
 
 num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
 
@@ -21,7 +26,11 @@ alert("El resultado de la operacion = " + suma);
 
 function restar()
 {
- let num1 ,num2 ,resta;
+ let num1;
+
+ let num2;
+
+ let resta;
 
  num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
 
@@ -35,7 +44,11 @@ function restar()
 
 function multiplicar()
 { 
-	 let num1 ,num2 ,multiplicacion;
+ let num1;
+
+ let num2;
+
+ let multiplicacion;
 
  num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
 
@@ -49,8 +62,11 @@ function multiplicar()
 
 function dividir()
 {
+ let num1;
 
-	 let num1 ,num2 ,division;
+ let num2;
+
+ let division;
 
  num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
 
