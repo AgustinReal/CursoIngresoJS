@@ -7,17 +7,19 @@ ej.: "El resto es 0 ."*/
 function SacarResto()
 {
 	let dividendo;
-
    let divisor;
-
    let resto;
 
-   dividendo = parseInt(document.getElementById("txtIdNumeroDividendo").value);
+   dividendo=document.getElementById("txtIdNumeroDividendo").value;
 
-   divisor = parseInt(document.getElementById("txtIdNumeroDivisor").value);
+   dividendo=parseInt(dividendo);
 
-// En esta operacion utilizamos "%" para sacar resto de una division.
-   resto = dividendo%divisor;
+   divisor=document.getElementById("txtIdNumeroDivisor").value;
 
-	alert("El resultado del resto es " + resto);
+   divisor=parseInt(divisor);
+
+   // En esta operacion utilizamos "%" para sacar resto de una division.
+   resto=dividendo%divisor;
+
+	alert("El resultado del resto es "+resto);
 }

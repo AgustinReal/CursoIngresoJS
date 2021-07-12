@@ -1,56 +1,67 @@
-/*2.	Para el departamento de Construcción:
-A.	 mostrar la cantidad de alambre a comprar  si se ingresara el largo y el ancho de un terreno rectangular y se debe alambra con tres hilos de alambre.
+/*
+Real Agustin Did D
+2.	Para el departamento de Construcción:
+A.	mostrar la cantidad de alambre a comprar  si se ingresara el largo y el ancho de un terreno rectangular y se debe alambra con tres hilos de alambre.
 B.	mostrar la cantidad de alambre a comprar  si se ingresara el radio  de un terreno circular y se debe alambra con tres hilos de alambre.
 C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de cal, debemos mostrar cuantas bolsas se necesitan de cada uno para las medidas que nos ingresen.
 */
 
 function Rectangulo () 
 {
- let alambre, cantAlambre, largo , ancho;
+    let ancho;
+    let largo;
+    let alambre;
 
- largo = parseInt(document.getElementById("txtIdLargo").value);
+    largo=document.getElementById("txtIdLargo").value;
+    largo=parseInt(largo);
 
- ancho = parseInt(document.getElementById("txtIdAncho").value);
+    ancho=document.getElementById("txtIdAncho").value;
+    ancho=parseInt(ancho);
 
-// En este paso sacamos el perimetro del rectangulo.
-alambre = (largo*2) + (ancho*2);
+    //En este paso se muestra lado*lado.
+    largo=largo*2;
+    
+    //En este paso se muestra ancho*ancho.
+    ancho=ancho*2;
 
-// Cuando consegimos tener el perimetro, sacamos la cantAlambre en  los 3 hilos.
-cantAlambre = alambre*3;
+    //En esto se implementa los hilos al rectangulo.
+    alambre=(ancho+largo)*3;
 
-alert("Resultado final " + cantAlambre);
-
+    alert("El rectangulo con los 3 hilos es : "+alambre);
 }
 function Circulo () 
 {
-	let radio, alambre, cantAlambre ;
+    let radio;
+    let alambre;
+    let calculoRadio;
 
-	radio = parseInt(document.getElementById("txtIdRadio").value);
+    radio=document.getElementById("txtIdRadio").value;
+    radio=parseFloat(radio);
 
+    //Utilizamos la formula del perimetro del circulo y lo aplicamos al radio imgresado.
+    calculoRadio=2*3.14*radio;
 
-	alambre= radio*2*(3.14);
+    //En este paso multiplicamos (x3) los hilos de alambre al radio calculado anteriormente.
+    alambre=calculoRadio*3;
 
-	cantAlambre = alambre*3;
-
-	alert("Resultado final " + cantAlambre);
-
-}
+    alert("El circulo de alambre es : " +alambre.toFixed(2));
+  }
 function Materiales () 
 {
-	let ancho ,largo ,cemento ,cal ,CantMetros;
+    let ancho;
+    let largo;
+    let cemento;
+    let cal;
 
+    largo=document.getElementById("txtIdLargo").value;
+    largo=parseInt(largo);
 
-largo = parseInt(document.getElementById("txtIdLargo").value);
+    ancho=document.getElementById("txtIdAncho").value;
+    ancho=parseInt(ancho);
 
-ancho = parseInt(document.getElementById("txtIdAncho").value);
+    cemento=largo*2;
 
+    cal=ancho*3;
 
-CantMetros = largo*ancho;
-
-cal = CantMetros*3;
-
-cemento = CantMetros*2;
-
-alert("Los metros cuadrados para el contrapiso son " + CantMetros + " , la cantidad de bolsas de cal son " + cal + " y la cantidad de bolsas de cemento son " + cemento);
-
+    alert("Los Materiales que se necesitas para contrapiso son " +cemento+" de cemento y "+cal+" de cal.");
 }

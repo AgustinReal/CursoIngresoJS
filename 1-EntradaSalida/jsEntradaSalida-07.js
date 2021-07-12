@@ -13,9 +13,13 @@ function sumar()
 
  let suma;
 
-num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+num1 = document.getElementById("txtIdNumeroUno").value;
 
-num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+num1 = parseInt(num1);
+
+num2 = document.getElementById("txtIdNumeroDos").value;
+
+num2 = parseInt(num2);
 
 suma = num1 + num2;
 
@@ -32,13 +36,17 @@ function restar()
 
  let resta;
 
- num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+num1 = document.getElementById("txtIdNumeroUno").value;
 
- num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+num1 = parseInt(num1);
+
+num2 = document.getElementById("txtIdNumeroDos").value;
+
+num2 = parseInt(num2);
 
  resta = num1 - num2;
 
- alert("El resultado de la operacion =" + resta);
+ alert("El resultado de la operacion = " + resta);
 	
 }
 
@@ -50,13 +58,17 @@ function multiplicar()
 
  let multiplicacion;
 
- num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+num1 = document.getElementById("txtIdNumeroUno").value;
 
- num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+num1 = parseInt(num1);
+
+num2 = document.getElementById("txtIdNumeroDos").value;
+
+num2 = parseInt(num2);
 
  multiplicacion = num1*num2;
 
- alert("El resultado de la operacion =" + multiplicacion);
+ alert("El resultado de la operacion = " + multiplicacion);
 	
 }
 
@@ -68,9 +80,13 @@ function dividir()
 
  let division;
 
- num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+num1 = document.getElementById("txtIdNumeroUno").value;
 
- num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+num1 = parseInt(num1);
+
+num2 = document.getElementById("txtIdNumeroDos").value;
+
+num2 = parseInt(num2);
 
  division = num1/num2;
 

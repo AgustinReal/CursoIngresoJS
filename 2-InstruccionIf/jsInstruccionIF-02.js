@@ -1,11 +1,16 @@
+/*
+Real Agustin Div D
+Enunciado:
+Al ingresar una edad debemos informar solo si la persona es mayor de edad
+*/
 function mostrar()
 {
-	
 	let edad;
 
-	edad = parseInt(document.getElementById("txtIdEdad").value);
+	edad=document.getElementById("txtIdEdad").value;
+	edad=parseInt(edad);
 
-	if(edad>=18) 
+	if(edad>17) 
 	{
 		alert("Es mayor de edad");
 	}

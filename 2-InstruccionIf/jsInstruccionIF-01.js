@@ -1,12 +1,17 @@
+/*
+Real Agustin Div D
+Enunciado:
+Al ingresar una edad que sea igual a 15, mostrar el mensaje "niña bonita".
+*/
 function mostrar()
 {
-	
-let edad;
+	let edad;
 
-edad = parseInt(document.getElementById("txtIdEdad").value);
+	edad=document.getElementById("txtIdEdad").value;
+	edad=parseInt(edad);
 
-if(edad==15)
-{
-	alert("niña bonita");
-}
+	if(edad==15)
+	{
+	      alert("niña bonita");
+	}
 }

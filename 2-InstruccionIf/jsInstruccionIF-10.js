@@ -7,22 +7,22 @@ function mostrar()
   "APROBÓ" para notas mayores a 4,
   "Vamos, la proxima se puede" para notas menores a 4
   */
- 
- let  numeroAleatorio = Math.round(Math.random()*10);
 
+  let numeroAleatorio;
 
- if(numeroAleatorio<5)
+  numeroAleatorio=Math.round(Math.random()*10);
 
-{
-   alert( "Su nota es : " + numeroAleatorio + " Vamos, la proxima se puede ");
-}
- else if(numeroAleatorio>8)
-{
-	alert("Su nota es : " + numeroAleatorio + " EXCELENTE " );
-}
-else
-{
-	alert("Su nota es : " + numeroAleatorio + " APROBÓ ");
-}
+  if(numeroAleatorio<5)
 
-}
+  {
+     alert( "Su nota es : " +numeroAleatorio+ " Vamos, la proxima se puede ");
+  }
+  else if(numeroAleatorio>8)
+  {
+     alert("Su nota es : " +numeroAleatorio+ " EXCELENTE " );
+  }
+  else
+  {
+     alert("Su nota es : " +numeroAleatorio+ " APROBÓ ");
+  }
+  }

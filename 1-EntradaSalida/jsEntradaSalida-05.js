@@ -5,7 +5,9 @@ ej.: "Usted se llama José y tiene 66 años" 	*/
 function mostrar()
 {	
 	// Se crea 2 variables (edad y nombre), para el usuario.
-	let nombre, edad ;
+	let nombre;
+
+	let edad;
 
     // En este paso guardamos en la V (nombre) el valor indicado, en este caso el nombre ingresado por el usuario.
 	nombre = document.getElementById("txtIdNombre").value;
